@@ -1,0 +1,115 @@
+/* w3.css'teki önemli renk tanımlarını geçersiz kılma */
+body, h1, h2, h3, h4, h5, p, ul {
+  color: initial !important;
+}
+
+/* Header ve diğer öğeler için özel koyu gri tonları tanımlama */
+header {
+  background-color: #262626 !important; /* Koyu gri tonu */
+}
+
+nav {
+  background-color: #262626 !important; /* Koyu gri tonu */
+}
+
+nav a {
+  color: #fff !important; /* Beyaz metin */
+}
+
+.w3-display-topright a {
+  background-color: #262626 !important; /* Koyu gri tonu */
+}
+
+/* Kırmızı renk sınıflarını koyu gri ile değiştirme */
+.w3-red, .w3-hover-red:hover {
+  background-color: #262626 !important; /* Koyu gri tonu */
+  color: #fff !important; /* Beyaz metin */
+}
+
+/* Reset CSS */
+body, h1, h2, h3, h4, h5, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000000; /* Siyah arka plan */
+  color: #ddd; /* Açık gri metin rengi */
+}
+
+/* Header */
+header {
+  padding: 15px;
+  text-align: center;
+  color: #fff !important; /* Beyaz metin */
+}
+
+/* Sidebar */
+nav {
+  color: #fff; /* Beyaz metin */
+}
+
+/* Sidebar Linkleri */
+nav a {
+  color: #fff !important; /* Beyaz metin */
+}
+
+/* Sidebar Linkleri: Hover */
+nav a:hover {
+  background-color: #333333; /* Daha koyu gri hover rengi */
+}
+
+/* Main Content */
+.w3-main {
+  background-color: #262626; /* Koyu gri arka plan */
+  padding: 20px;
+  color: #fff; /* Beyaz metin */
+}
+
+/* Telefon Numarası Butonu */
+.w3-display-topright a {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #262626; /* Koyu gri buton */
+  color: #fff; /* Beyaz metin */
+}
+
+/* Telefon Numarası Butonu Hover */
+.w3-display-topright a:hover {
+  background-color: #333333; /* Daha koyu gri hover rengi */
+}
+
+/* Footer'daki kayan yazı */
+footer .marquee-container .marquee .marquee-text {
+  color: #ffffff !important; /* Beyaz metin */
+  font-size: 20px; /* Metin boyutunu büyüt */
+}
+
+@keyframes marquee {
+  0% {
+      transform: translateX(100%);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}
+
+/* Görünmez slider */
+.mySlides {
+  display: none;
+}
+
+/* Google Maps embed'inin uygun genişlikte olmasını sağlama */
+iframe {
+  max-width: 100%; /* İframe'in en fazla genişliği ekranın genişliği kadar olacaktır */
+}
+
+p {
+  color: #B4B4B4 !important;
+}
+
+h1 {
+  color: #ffffff !important;
+}
