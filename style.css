@@ -1,115 +1,248 @@
-/* w3.css'teki önemli renk tanımlarını geçersiz kılma */
-body, h1, h2, h3, h4, h5, p, ul {
-  color: initial !important;
-}
+/* Google Fonts - Roboto for a modern look */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
-/* Header ve diğer öğeler için özel koyu gri tonları tanımlama */
-header {
-  background-color: #262626 !important; /* Koyu gri tonu */
-}
-
-nav {
-  background-color: #262626 !important; /* Koyu gri tonu */
-}
-
-nav a {
-  color: #fff !important; /* Beyaz metin */
-}
-
-.w3-display-topright a {
-  background-color: #262626 !important; /* Koyu gri tonu */
-}
-
-/* Kırmızı renk sınıflarını koyu gri ile değiştirme */
-.w3-red, .w3-hover-red:hover {
-  background-color: #262626 !important; /* Koyu gri tonu */
-  color: #fff !important; /* Beyaz metin */
-}
-
-/* Reset CSS */
+/* General Overrides for w3.css and base styles */
 body, h1, h2, h3, h4, h5, p, ul {
   margin: 0;
   padding: 0;
+  color: #E0E0E0; /* Light grey for general text */
+  font-family: 'Roboto', sans-serif; /* Modern font */
 }
 
-/* Global Styles */
+/* Color Palette */
+:root {
+  --primary-dark: #1A1A1A; /* Very dark background */
+  --secondary-dark: #2C2C2C; /* Slightly lighter dark for sections */
+  --accent-color: #007BFF; /* A vibrant blue for accents */
+  --text-light: #E0E0E0; /* Light grey for text */
+  --text-medium: #B0B0B0; /* Medium grey for secondary text */
+}
+
 body {
-  font-family: Arial, sans-serif;
-  background-color: #000000; /* Siyah arka plan */
-  color: #ddd; /* Açık gri metin rengi */
+  background-color: var(--primary-dark);
+  color: var(--text-light);
+  line-height: 1.6;
 }
 
-/* Header */
-header {
-  padding: 15px;
-  text-align: center;
-  color: #fff !important; /* Beyaz metin */
+/* Header and Navigation */
+header, nav {
+  background-color: var(--secondary-dark) !important;
+  color: var(--text-light) !important;
 }
 
-/* Sidebar */
-nav {
-  color: #fff; /* Beyaz metin */
-}
-
-/* Sidebar Linkleri */
 nav a {
-  color: #fff !important; /* Beyaz metin */
+  color: var(--text-light) !important;
+  padding: 12px 16px; /* More padding for links */
+  transition: background-color 0.3s ease; /* Smooth transition */
 }
 
-/* Sidebar Linkleri: Hover */
 nav a:hover {
-  background-color: #333333; /* Daha koyu gri hover rengi */
+  background-color: var(--accent-color) !important; /* Accent color on hover */
+  color: #FFFFFF !important;
 }
 
-/* Main Content */
-.w3-main {
-  background-color: #262626; /* Koyu gri arka plan */
-  padding: 20px;
-  color: #fff; /* Beyaz metin */
+/* Top menu on small screens */
+.w3-top.w3-hide-large {
+  background-color: var(--secondary-dark) !important;
 }
 
-/* Telefon Numarası Butonu */
+.w3-top.w3-hide-large a {
+  color: var(--text-light) !important;
+}
+
+/* Phone Number Button */
 .w3-display-topright a {
-  padding: 10px 20px;
-  border-radius: 5px;
-  background-color: #262626; /* Koyu gri buton */
-  color: #fff; /* Beyaz metin */
+  background-color: var(--accent-color) !important;
+  color: #FFFFFF !important;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 50px; /* Ensure it's below the top bar */
 }
 
-/* Telefon Numarası Butonu Hover */
 .w3-display-topright a:hover {
-  background-color: #333333; /* Daha koyu gri hover rengi */
+  background-color: #0056b3 !important; /* Darker blue on hover */
+  transform: translateY(-2px);
 }
 
-/* Footer'daki kayan yazı */
-footer .marquee-container .marquee .marquee-text {
-  color: #ffffff !important; /* Beyaz metin */
-  font-size: 20px; /* Metin boyutunu büyüt */
+/* Main Content Area */
+.w3-main {
+  background-color: var(--primary-dark);
+  padding: 40px; /* Increased padding */
+  margin-left: 340px; /* Adjusted for sidebar */
+  margin-right: 40px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+  border-radius: 8px;
 }
 
-@keyframes marquee {
-  0% {
-      transform: translateX(100%);
+/* Headings */
+h1, h2, h3, h4, h5 {
+  color: var(--text-light) !important;
+  margin-bottom: 15px;
+  font-weight: 700; /* Bold headings */
+}
+
+.w3-xxxlarge {
+  font-size: 48px !important; /* Larger main headings */
+  text-align: center; /* Center align the main heading */
+}
+
+/* Supernova Nebulae Animation for H1 */
+.supernova-nebulae {
+  animation: neon-glow 1.5s ease-in-out infinite alternate;
+  text-shadow: 
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #0ff,
+    0 0 40px #0ff,
+    0 0 80px #0ff,
+    0 0 90px #0ff,
+    0 0 100px #0ff,
+    0 0 150px #0ff;
+}
+
+@keyframes neon-glow {
+  from {
+    text-shadow: 
+      0 0 5px #fff,
+      0 0 10px #fff,
+      0 0 20px #0ff,
+      0 0 40px #0ff,
+      0 0 80px #0ff,
+      0 0 90px #0ff,
+      0 0 100px #0ff,
+      0 0 150px #0ff;
   }
-  100% {
-      transform: translateX(-100%);
+  to {
+    text-shadow: 
+      0 0 2px #fff,
+      0 0 4px #fff,
+      0 0 6px #0ff,
+      0 0 10px #0ff,
+      0 0 20px #0ff,
+      0 0 30px #0ff,
+      0 0 40px #0ff,
+      0 0 50px #0ff;
   }
 }
 
-/* Görünmez slider */
+
+/* Horizontal Rule */
+hr {
+  border: none;
+  border-top: 3px solid var(--accent-color) !important; /* Accent color for HR */
+  width: 70px !important; /* Slightly wider */
+  margin: 20px 0;
+  border-radius: 3px;
+}
+
+/* Paragraphs */
+p {
+  color: var(--text-medium) !important;
+  margin-bottom: 15px;
+}
+
+/* Image Carousel */
+.w3-content.w3-display-container {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  overflow: hidden; /* Ensures images respect border-radius */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
 .mySlides {
+  width: 100%;
+  height: auto;
   display: none;
 }
 
-/* Google Maps embed'inin uygun genişlikte olmasını sağlama */
+/* Google Maps iframe */
 iframe {
-  max-width: 100%; /* İframe'in en fazla genişliği ekranın genişliği kadar olacaktır */
+  max-width: 100%;
+  border-radius: 8px;
+  margin-top: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
 }
 
-p {
-  color: #B4B4B4 !important;
+/* Footer */
+footer {
+  background-color: var(--secondary-dark);
+  padding: 30px;
+  margin-top: 40px;
+  border-radius: 8px;
+  box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.2);
 }
 
-h1 {
-  color: #ffffff !important;
+footer .marquee-container {
+  background-color: var(--primary-dark);
+  padding: 10px 0;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+footer .marquee-text {
+  color: var(--accent-color) !important; /* Accent color for marquee */
+  font-size: 22px !important;
+  font-weight: bold;
+  white-space: nowrap;
+  animation: marquee 15s linear infinite; /* Adjust speed as needed */
+}
+
+@keyframes marquee {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+footer p {
+  color: var(--text-medium) !important;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+/* Instagram Icon */
+footer a img {
+  width: 30px; /* Slightly larger icon */
+  height: 30px;
+  margin-top: 15px;
+  transition: transform 0.2s ease;
+}
+
+footer a img:hover {
+  transform: scale(1.1);
+}
+
+/* W3.CSS Red overrides to use accent color */
+.w3-red, .w3-hover-red:hover {
+  background-color: var(--accent-color) !important;
+  color: #fff !important;
+}
+
+/* Specific adjustments for the sidebar logo */
+.w3-sidebar .w3-container img {
+  max-width: 100%;
+  height: auto;
+  padding: 0 !important; /* Remove w3-padding-64 */
+  margin-bottom: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .w3-main {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding: 20px;
+  }
+  .w3-display-topright {
+    position: static;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .w3-display-topright a {
+    display: inline-block;
+  }
 }
