@@ -44,10 +44,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <link rel="canonical" href="https://bodrumelectric.com/">
     
     <!-- Stylesheets -->
-    <!-- 1. LCP Görselini (Slider'ın ilk resmi) Önceden Tanıt -->
+   
 <link rel="preload" as="image" href="1680x1050-darkLogo.jpg" fetchpriority="high">
-
-<!-- 2. CSS ve Fontları Asenkron Yükleyerek Render-Blocking'i Engelle -->
 <link rel="preload" href="https://www.w3schools.com/w3css/4/w3.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <link rel="preload" href="style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -58,18 +56,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap">
 </noscript>
 
-<!-- 3. GTM'i Geciktir (Botları ve Hızı İyileştirir) -->
-<script>
-window.addEventListener('load', function() {
-    setTimeout(function() {
-        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-WZLDCNK4');
-    }, 3500); 
-});
-</script>
+
 
     <!-- Favicon -->
     <link rel="icon" href="favicon.png" type="image/png">
