@@ -51,6 +51,22 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <!-- Favicon -->
     <link rel="icon" href="favicon.png" type="image/png">
 
+    <!-- Profesyonellik ve Okunurluk İçin Ek CSS Dokunuşları -->
+    <style>
+      body, h1, h2, h3, h4, h5, h6, p { font-family: 'Roboto', sans-serif !important; color: #222222 !important; }
+      .w3-text-red, .text-premium-red { color: #b30000 !important; }
+      .w3-red, .btn-premium-red { background-color: #b30000 !important; color: #ffffff !important; }
+      .w3-sidebar { background-color: #1e272e !important; color: #ffffff !important; }
+      .w3-sidebar a { color: #ffffff !important; border-bottom: 1px solid #2f3640; }
+      .w3-sidebar a:hover { background-color: #b30000 !important; color: #ffffff !important; }
+      .w3-sidebar .w3-red { background-color: #b30000 !important; }
+      .service-card { background: #ffffff; border-top: 4px solid #b30000; box-shadow: 0 4px 15px rgba(0,0,0,0.06); border-radius: 6px; padding: 24px !important; transition: 0.3s; }
+      .service-card:hover { transform: translateY(-5px); box-shadow: 0 8px 25px rgba(0,0,0,0.12); }
+      .service-card p { color: #444444 !important; font-size: 0.95rem; line-height: 1.6; }
+      .panel-cta { background-color: #1e272e !important; color: #ffffff !important; border-radius: 6px; padding: 24px !important; border-left: 6px solid #b30000 !important; }
+      .panel-cta h3, .panel-cta p { color: #ffffff !important; }
+    </style>
+
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-R4CS7J6KF0"></script>
     <script>
@@ -66,44 +82,44 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </script>
 </head>
 
-<body>
+<body style="background-color: #fcfcfc;">
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WZLDCNK4" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <!-- Sidebar/menu -->
   <nav class="w3-sidebar w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
-    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Menüyü Kapat</a>
-    <div class="w3-container">
-      <img src="bodrumElectricLogo.png" alt="Bodrum Elektrikçi">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px;color:#fff !important;">Menüyü Kapat</a>
+    <div class="w3-container w3-center" style="background:#fff; border-radius:6px; padding:10px; margin-bottom:20px;">
+      <img src="bodrumElectricLogo.png" alt="Bodrum Elektrikçi" style="max-width:100%; height:auto;">
     </div>
     <div class="w3-bar-block">
-      <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Ana Sayfa</a> 
-      <a href="english.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">ENGLISH</a> 
+      <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">Ana Sayfa</a> 
+      <a href="english.html" onclick="w3_close()" class="w3-bar-item w3-button">ENGLISH</a> 
       <a href="klima-tamiri.html" onclick="w3_close()" class="w3-bar-item w3-button w3-red">🔥 Klima Tamir & Bakım</a> 
-      <a href="bodrumelektrikci.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Bodrum Elektrikçi</a> 
-      <a href="bitezelektrikci.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Bitez Elektrikçi</a> 
-      <a href="turkbukuelektrikci.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Türkbükü Elektrikçi</a> 
-      <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Gümüşlük Elektrikçi</a> 
-      <a href="gundoganelektrikci.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Gündoğan Elektrikçi</a> 
-      <a href="konacikelektrkci.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Konacık Elektrikçi</a> 
-      <a href="mumcularelektrikci.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Mumcular Elektrikçi</a> 
-      <a href="ortakent_yahsielektrikci.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Ortakent Yahşi Elektrikçi</a> 
-      <a href="turgutreiselektrikci.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Turgutreis Elektrikçi</a> 
-      <a href="yalielektrikci.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Yalı Elektrikçi</a> 
-      <a href="yalikavakelektrikci.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Yalıkavak Elektrikçi</a>
-      <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">İletişim</a>
+      <a href="bodrumelektrikci.html" onclick="w3_close()" class="w3-bar-item w3-button">Bodrum Elektrikçi</a> 
+      <a href="bitezelektrikci.html" onclick="w3_close()" class="w3-bar-item w3-button">Bitez Elektrikçi</a> 
+      <a href="turkbukuelektrikci.html" onclick="w3_close()" class="w3-bar-item w3-button">Türkbükü Elektrikçi</a> 
+      <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">Gümüşlük Elektrikçi</a> 
+      <a href="gundoganelektrikci.html" onclick="w3_close()" class="w3-bar-item w3-button">Gündoğan Elektrikçi</a> 
+      <a href="konacikelektrkci.html" onclick="w3_close()" class="w3-bar-item w3-button">Konacık Elektrikçi</a> 
+      <a href="mumcularelektrikci.html" onclick="w3_close()" class="w3-bar-item w3-button">Mumcular Elektrikçi</a> 
+      <a href="ortakent_yahsielektrikci.html" onclick="w3_close()" class="w3-bar-item w3-button">Ortakent Yahşi Elektrikçi</a> 
+      <a href="turgutreiselektrikci.html" onclick="w3_close()" class="w3-bar-item w3-button">Turgutreis Elektrikçi</a> 
+      <a href="yalielektrikci.html" onclick="w3_close()" class="w3-bar-item w3-button">Yalı Elektrikçi</a> 
+      <a href="yalikavakelektrikci.html" onclick="w3_close()" class="w3-bar-item w3-button">Yalıkavak Elektrikçi</a>
+      <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">İletişim</a>
     </div>
   </nav>
 
   <!-- Top menu on small screens -->
-  <header class="w3-container w3-top w3-hide-large w3-xlarge w3-padding">
-    <a href="javascript:void(0)" class="w3-button w3-margin-right" onclick="w3_open()">☰</a>
-    <span>Bodrum Klima Servisi</span>
+  <header class="w3-container w3-top w3-hide-large w3-xlarge w3-padding" style="background-color:#1e272e; color:#fff !important;">
+    <a href="javascript:void(0)" class="w3-button w3-margin-right" onclick="w3_open()" style="color:#fff !important;">☰</a>
+    <span style="color:#fff !important; font-weight:bold;">Bodrum Klima Servisi</span>
   </header>
 
-  <!-- Telefon numarası butonu (Güncellendi) -->
-  <div class="w3-display-topright w3-padding">
-    <a href="tel:+905549490708" class="w3-button w3-large w3-red w3-card-4" style="font-weight: bold; border-radius: 4px;">
+  <!-- Telefon numarası butonu (Premium Tasarım) -->
+  <div class="w3-display-topright w3-padding w3-hide-small" style="z-index:4;">
+    <a href="tel:+905549490708" class="w3-button w3-large w3-card-4 btn-premium-red" style="font-weight: bold; border-radius: 4px; box-shadow: 0 4px 10px rgba(179,0,0,0.3);">
       ☎ +90 (554) 949 07 08
     </a>
   </div>
@@ -114,92 +130,93 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <div class="w3-main" style="margin-left:340px;margin-right:40px">
 
     <!-- Header / Giriş Bölümü -->
-    <div class="w3-container" style="margin-top:80px" id="showcase">
-      <h1 class="w3-xxxlarge w3-text-red"><b>Bodrum Klima Tamir & Bakım Servisi</b></h1>
-      <hr class="w Round" style="width:50px;border:5px solid #f44336">
+    <div class="w3-container" style="margin-top:100px" id="showcase">
+      <h1 class="w3-xxxlarge w3-text-red" style="font-weight:700;"><b>Bodrum Klima Tamir & Bakım Servisi</b></h1>
+      <hr class="w3-round" style="width:60px; border:3px solid #b30000; margin-top:0;">
       
-      <p class="w3-xlarge">Sıcak yaz günlerinde klimanız yarı yolda bırakmasın! Bodrum genelinde 7/24 profesyonel, hızlı ve garantili teknik servis hizmeti sunuyoruz.</p>
+      <p class="w3-xlarge" style="color: #333 !important; line-height:1.6;">Sıcak yaz günlerinde klimanız yarı yolda bırakmasın! Bodrum genelinde 7/24 profesyonel, hızlı ve garantili teknik servis hizmeti sunuyoruz.</p>
       
-      <!-- Hızlı Servis Hattı (Güncellendi) -->
-      <div class="w3-panel w3-leftbar w3-light-grey w3-padding-16">
-        <h3><b>Hızlı Servis Hattı:</b></h3>
-        <p class="w3-xxlarge"><strong><a href="tel:+905549490708" class="w3-text-red" style="text-decoration: none;">☎ +90 554 949 07 08</a></strong></p>
-        <p><i>Tıklayarak doğrudan arayabilir, servis kaydı oluşturabilirsiniz.</i></p>
+      <!-- Hızlı Servis Hattı (Kurumsal Cihaz Paneli Görünümü) -->
+      <div class="w3-panel w3-card-4 panel-cta w3-margin-top">
+        <h3 style="margin-top:0; font-weight:bold;">ACİL TEKNİK SERVİS HATTI</h3>
+        <p class="w3-xxlarge" style="margin:10px 0;"><strong style="letter-spacing: 1px;"><a href="tel:+905549490708" style="color: #ff4757 !important; text-decoration: none;">☎ +90 554 949 07 08</a></strong></p>
+        <p style="font-size:0.95rem; opacity:0.9; margin-bottom:0;"><i>Mobil cihazlardan numaraya tıklayarak doğrudan arayabilir, anında servis kaydı oluşturabilirsiniz.</i></p>
       </div>
     </div>
     
     <!-- Hizmet Detayları Bölümü -->
-    <div class="w3-container" id="services" style="margin-top:40px">
-      <h2 class="w3-xxlarge w3-text-dark-grey"><b>Klima Alanında Neler Yapıyoruz?</b></h2>
-      <hr class="w3-round" style="width:50px;border:5px solid #f44336">
+    <div class="w3-container" id="services" style="margin-top:50px">
+      <h2 class="w3-xxlarge" style="font-weight:700; color:#1e272e !important;"><b>Klima Alanında Neler Yapıyoruz?</b></h2>
+      <hr class="w3-round" style="width:60px; border:3px solid #b30000; margin-top:0;">
       
-      <div class="w3-row-padding w3-margin-top">
+      <div class="w3-row-padding w3-margin-top" style="margin-left:-16px; margin-right:-16px;">
         <div class="w3-third w3-margin-bottom">
-          <div class="w3-card-4 w3-padding w3-white">
-            <h4 class="w3-text-red"><b>Klima Arıza & Tamir</b></h4>
-            <p>Klimanız soğutmuyor mu, sesli mi çalışıyor ya da su mu akıtıyor? Her marka ve model klimanın arızasını profesyonel ekipmanlarımızla hızla tespit ediyor ve tamir ediyoruz.</p>
+          <div class="w3-padding service-card">
+            <h4 class="w3-text-red" style="font-weight:bold; margin-top:0;"><b>Klima Arıza & Tamir</b></h4>
+            <p>Klimanız soğutmuyor mu, sesli mi çalışıyor ya da su mu akıtıyor? Her marka ve model klimanın arızasını profesyonel ekipmanlarımızla hızla tespit ediyor ve orijinal yedek parça desteğiyle tamir ediyoruz.</p>
           </div>
         </div>
 
         <div class="w3-third w3-margin-bottom">
-          <div class="w3-card-4 w3-padding w3-white">
-            <h4 class="w3-text-red"><b>Periyodik Klima Bakımı</b></h4>
-            <p>Enerji tasarrufu sağlamak, klimanızın ömrünü uzatmak ve sağlığınızı korumak için filtre temizliği, dezenfeksiyon ve kapsamlı periyodik bakım yapıyoruz.</p>
+          <div class="w3-padding service-card">
+            <h4 class="w3-text-red" style="font-weight:bold; margin-top:0;"><b>Periyodik Klima Bakımı</b></h4>
+            <p>Enerji tasarrufu sağlamak, yüksek elektrik faturalarının önüne geçmek ve sağlığınızı korumak için filtre temizliği, antibakteriyel dezenfeksiyon ve kapsamlı gaz basınç kontrolleri yapıyoruz.</p>
           </div>
         </div>
 
         <div class="w3-third w3-margin-bottom">
-          <div class="w3-card-4 w3-padding w3-white">
-            <h4 class="w3-text-red"><b>Klima Gaz Dolumu</b></h4>
-            <p>Eksilen veya kaçak sonucu boşalan klima gazlarını kontrol ediyor, sistemdeki kaçakları onardıktan sonra orijinal değerlerinde gaz şarjı gerçekleştiriyoruz.</p>
+          <div class="w3-padding service-card">
+            <h4 class="w3-text-red" style="font-weight:bold; margin-top:0;"><b>Klima Gaz Dolumu</b></h4>
+            <p>Zamanla eksilen veya kaçak sonucu tamamen boşalan klima gazlarını teknolojik cihazlarla kontrol ediyor, sistemdeki sızıntıları onardıktan sonra fabrikasyon değerlerinde gaz şarjı gerçekleştiriyoruz.</p>
           </div>
         </div>
       </div>
 
-      <div class="w3-row-padding">
+      <div class="w3-row-padding" style="margin-left:-16px; margin-right:-16px;">
         <div class="w3-half w3-margin-bottom">
-          <div class="w3-card-4 w3-padding w3-white">
-            <h4 class="w3-text-red"><b>Klima Montaj & Söküm</b></h4>
-            <p>Yeni aldığınız ya da yerini değiştirmek istediğiniz klimaların, doğru kapasite ve lokasyon analizi yapılarak güvenli ve estetik montajını sağlıyoruz.</p>
+          <div class="w3-padding service-card">
+            <h4 class="w3-text-red" style="font-weight:bold; margin-top:0;"><b>Klima Montaj & Söküm</b></h4>
+            <p>Yeni aldığınız ya da lokasyonunu değiştirmek istediğiniz klimaların, doğru kapasite analizi ve yer tespiti yapılarak güvenli, verimli ve estetik şekilde montajını veya sökümünü sağlıyoruz.</p>
           </div>
         </div>
 
         <div class="w3-half w3-margin-bottom">
-          <div class="w3-card-4 w3-padding w3-white">
-            <h4 class="w3-text-red"><b>7/24 Acil Teknik Destek</b></h4>
-            <p>Bodrum'un yaz sıcağında mağdur olmamanız için acil durumlarda gezici servis aracımızla en kısa sürede adresinize ulaşıyoruz.</p>
+          <div class="w3-padding service-card">
+            <h4 class="w3-text-red" style="font-weight:bold; margin-top:0;"><b>7/24 Acil Mobil Destek</b></h4>
+            <p>Bodrum'un kavurucu yaz sıcaklarında düzeninizin bozulmaması için, acil durumlarda donanımlı gezici servis aracımızla en kısa sürede adresinize ulaşıp hızlı çözümler üretiyoruz.</p>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Hizmet Bölgeleri (Güncellendi) -->
-    <div class="w3-container w3-padding-32" style="margin-top:40px; background-color:#f1f1f1;">
-      <h3 class="w3-center"><b>Bodrum'un Tüm Mahallelerine Gezici Servis</b></h3>
-      <p class="w3-center w3-large">Bitez, Yalıkavak, Turgutreis, Gümüşlük, Ortakent, Türkbükü, Gündoğan, Konacık ve çevre bölgelere en hızlı şekilde hizmet ulaştırıyoruz.</p>
+    <!-- Hizmet Bölgeleri (Premium Şerit) -->
+    <div class="w3-container w3-padding-32 w3-card-4" style="margin-top:50px; background-color:#1e272e; border-radius:6px;">
+      <h3 class="w3-center" style="color:#ffffff !important; font-weight:bold; margin-top:0;"><b>Bodrum'un Tüm Mahallelerine Gezici Servis</b></h3>
+      <p class="w3-center w3-large" style="color:#f1f1f1 !important;">Bitez, Yalıkavak, Turgutreis, Gümüşlük, Ortakent, Türkbükü, Gündoğan, Konacık ve çevre bölgelere en hızlı şekilde mobil hizmet ulaştırıyoruz.</p>
       <div class="w3-center w3-margin-top">
-        <a href="tel:+905549490708" class="w3-button w3-red w3-xlarge w3-padding-large" style="font-weight:bold; border-radius:5px;">Hemen Teknik Servis Çağır</a>
+        <a href="tel:+905549490708" class="w3-button btn-premium-red w3-xlarge w3-padding-large" style="font-weight:bold; border-radius:5px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">Hemen Teknik Servis Çağır</a>
       </div>
     </div>
 
-    <!-- İletişim & Footer Bölümü (Güncellendi) -->
-    <div class="w3-container w3-padding-16">
-      <h2>İletişim Bilgileri</h2>
-      <p><b>Telefon:</b> +90 554 949 07 08</p>
-      <p><b>E-posta:</b> karasumahir@yahoo.com</p>
+    <!-- İletişim & Detaylar -->
+    <div class="w3-container w3-padding-24" style="margin-top:30px; border-bottom: 2px solid #eee;">
+      <h2 style="font-weight:bold;">İletişim Bilgileri</h2>
+      <p style="font-size:1.05rem;"><b>Telefon:</b> <a href="tel:+905549490708" style="color:#b30000; font-weight:bold; text-decoration:none;">+90 554 949 07 08</a></p>
+      <p style="font-size:1.05rem;"><b>E-posta:</b> <a href="mailto:karasumahir@yahoo.com" style="color:#222; text-decoration:none;">karasumahir@yahoo.com</a></p>
     </div>
     
-    <footer class="w3-container w3-padding-32 w3-light-grey w3-center">
-      <div class="marquee-container">
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-32 w3-light-grey w3-center" style="margin-top:20px;">
+      <div class="marquee-container" style="background:#1e272e; padding:5px 0; border-radius:4px; margin-bottom:15px;">
         <div class="marquee">
-          <p class="marquee-text">7/24 ACİL DESTEK ELEKTRİKÇİNİZ - 0541 103 2448 - BODRUM</p>
+          <p class="marquee-text" style="color:#fff !important; margin:0; font-weight:bold;">7/24 ACİL DESTEK ELEKTRİKÇİNİZ - 0541 103 2448 - BODRUM</p>
         </div>
       </div>
-      <p>BODRUM TEKNİK 2026</p>
+      <p style="color:#666 !important; font-weight:bold; margin-bottom:5px;">BODRUM TEKNİK 2026</p>
        <a href="https://www.instagram.com/bodrumelectric/" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" style="width:24px; height:24px; margin-top:10px;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" style="width:24px; height:24px; opacity:0.8;">
        </a>
-       <img src="TRUSTBadgeBodrumElectric.png" alt="Güven Rozeti" style="width:80px; height:auto; margin-top:10px; margin-left: 15px;">
+       <img src="TRUSTBadgeBodrumElectric.png" alt="Güven Rozeti" style="width:80px; height:auto; margin-left: 15px;">
     </footer>
     
   </div>
