@@ -53,17 +53,27 @@
     <!-- Favicon -->
     <link rel="icon" href="favicon.png" type="image/png">
 
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R4CS7J6KF0"></script>
+    <!-- Akıllı GTM & GA4 Yükleyici (Hız Dostu + Anlık Etkileşim) -->
 <script>
+window.gtmLoaded = false;
+function loadGTM() {
+  if (window.gtmLoaded) return;
+  window.gtmLoaded = true;
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-WZLDCNK4');
+}
+
+// Kullanıcı ekrana dokunduğu, kaydırdığı veya tıkladığı an GTM'i başlat
+['touchstart', 'mousemove', 'scroll', 'keydown', 'click'].forEach(function(evt) {
+  window.addEventListener(evt, loadGTM, { once: true, passive: true });
+});
+
+// Hiç etkileşim olmazsa 3.5 saniye sonra yedek olarak başlat
 window.addEventListener('load', function() {
-    setTimeout(function() {
-        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-WZLDCNK4');
-    }, 3500); // 3.5 saniye geciktirme botları atlatacaktır
+  setTimeout(loadGTM, 3500);
 });
 </script>
 
