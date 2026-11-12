@@ -53,9 +53,11 @@
     <!-- Favicon -->
     <link rel="icon" href="favicon.png" type="image/png">
 
-    <!-- Akıllı GTM & GA4 Yükleyici (Hız Dostu + Anlık Etkileşim) -->
+    <!-- Akıllı GTM Yükleyici (Reklam Tıklamalarında Anında + PageSpeed Dostu) -->
 <script>
+window.dataLayer = window.dataLayer || [];
 window.gtmLoaded = false;
+
 function loadGTM() {
   if (window.gtmLoaded) return;
   window.gtmLoaded = true;
@@ -66,15 +68,30 @@ function loadGTM() {
   })(window,document,'script','dataLayer','GTM-WZLDCNK4');
 }
 
-// Kullanıcı ekrana dokunduğu, kaydırdığı veya tıkladığı an GTM'i başlat
-['touchstart', 'mousemove', 'scroll', 'keydown', 'click'].forEach(function(evt) {
-  window.addEventListener(evt, loadGTM, { once: true, passive: true });
-});
+// 1. Google Ads reklamından gelenlerde (gclid, wbraid, gbraid) 0 ms gecikmeyle başlat
+if (/gclid=|wbraid=|gbraid=/i.test(window.location.search)) {
+  loadGTM();
+} else {
+  // 2. Normal ziyaretçi ve PageSpeed botları için etkileşim veya 3.5 sn bekle
+  ['touchstart', 'mousemove', 'scroll', 'keydown', 'click'].forEach(function(evt) {
+    window.addEventListener(evt, loadGTM, { once: true, passive: true });
+  });
+  window.addEventListener('load', function() {
+    setTimeout(loadGTM, 3500);
+  });
+}
 
-// Hiç etkileşim olmazsa 3.5 saniye sonra yedek olarak başlat
-window.addEventListener('load', function() {
-  setTimeout(loadGTM, 3500);
-});
+// 3. GTM henüz inmeden ilk milisaniyede telefon linkine basılırsa tıklamayı kaydet
+document.addEventListener('click', function(e) {
+  var link = e.target.closest('a[href^="tel:"]');
+  if (link && !window.gtmLoaded) {
+    window.dataLayer.push({
+      'event': 'early_phone_click',
+      'gtm.elementUrl': link.href
+    });
+    loadGTM();
+  }
+}, true);
 </script>
 
 </head>
